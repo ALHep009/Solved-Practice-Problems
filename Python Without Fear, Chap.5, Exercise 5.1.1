@@ -1,0 +1,17 @@
+### As the program takes an input from the end user, have it count the number of names entered. 
+### Then, before the sort names are output, print a message stating how many names were input. 
+
+names = []
+
+while True:
+    u = input('Enter a name: ')
+    if u == '':
+        break
+    names.append(u)
+    w = len(names)
+    print('The number of names input are', w)
+    
+names.sort() 
+##Sort the names in alphabetical order at the end of the program
+print('There were', w, 'names input')
+print(names)
