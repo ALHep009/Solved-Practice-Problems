@@ -1,0 +1,20 @@
+### Replicating the Sieve of Eratosthenes
+
+# A prime Number is a number that can only be divisible by itself and 1. Unlike even numbers, it can't be divided
+# into smaller and equal portions of the divisor. We can replicate the Sieve and use it to return only prime numbers. 
+
+n = int(input("Enter a number, here: "))
+bool_list = [True]*100 # This makes a list with 100 entries, all marked as True
+
+for prime in range(2, 100): 
+    if bool_list[prime]:
+        print(prime, end=' ,')
+        for i in range(prime*2, 100, prime):
+            bool_list[i] = False
+            
+
+### 
+
+### 
+
+### 
